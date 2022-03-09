@@ -17,7 +17,6 @@ export const CounterApp = () => {
     <>
         <p>Counter1 {counter1}</p>
         <p>Counter2 {counter2}</p>
-        <hr />
 
         <button 
             className="btn btn-primary"
