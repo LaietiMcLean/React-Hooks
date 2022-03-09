@@ -4,3 +4,10 @@ color:azure;
 font-family: 'Courier New', Courier, monospace;
 }
 
+h1 {
+    color: rgb(106, 199, 163);
+}
+
+.btn {
+    margin: 20px;
+}

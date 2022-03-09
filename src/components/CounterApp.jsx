@@ -15,8 +15,8 @@ export const CounterApp = () => {
 
   return (
     <>
-        <h1>Counter1 {counter1}</h1>
-        <h1>Counter2 {counter2}</h1>
+        <p>Counter1 {counter1}</p>
+        <p>Counter2 {counter2}</p>
         <hr />
 
         <button 
