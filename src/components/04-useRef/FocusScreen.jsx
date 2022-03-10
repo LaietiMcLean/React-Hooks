@@ -1,21 +1,24 @@
-import React from 'react'
+import React, { useRef } from 'react'
 
 import '../02-useEffect/effects.css'
 
 export const FocusScreen = () => {
 
+  const inputRef = useRef();
+
   const handleClick = () => {
-      document.querySelector('#btn1').select();
-  }
+      inputRef.current.select();
+      console.log(inputRef);
+;  }
 
   return (
     <div>
         <p>Focus Screen</p>
         <input
+            ref={inputRef}
             id="btn1"
             className="form-control"
             placeholder="Your name"
-
         />
         <button 
             className="btn btn-outline-primary"
