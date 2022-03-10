@@ -17,8 +17,13 @@ export const FormWithCustomHook = () => {
         console.log('el e-mail ha cambiado')
     }, [email]);
 
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        console.log(formsValues);
+    }
+
     return (
-        <form>
+        <form onSubmit={handleSubmit}>
             <p>FormWithCustomHook</p>
             <div className="form-group">
                 <input 
@@ -48,6 +53,10 @@ export const FormWithCustomHook = () => {
                     onChange={handleInputChange}
                 />
             </div>
+
+            <button type="submit" className="btn btn-primary">
+                Save
+            </button>
         </form>
     )
 }
