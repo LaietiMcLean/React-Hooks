@@ -7,6 +7,7 @@ import { MultipleCustomHooks } from './components/03-examples/MultipleCustomHook
 import { FocusScreen } from './components/04-useRef/FocusScreen'
 import { RealExampleRef } from './components/04-useRef/RealExampleRef'
 import { LayoutEffect } from './components/05-useLayoutEffect/LayoutEffect'
+import { Memorize } from './components/06-memos/Memorize'
 
 export const HookApp = () => {
   return (
@@ -33,6 +34,9 @@ export const HookApp = () => {
     <hr />
     <h1>useLayoutEffect</h1>
     <LayoutEffect />
+    <hr />
+    <h1>Memorize - React.memo()</h1>
+    <Memorize />
     </>
   )
 }
